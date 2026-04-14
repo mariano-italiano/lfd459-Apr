@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kubernetes Training</title>
+<style>
+    /* Reset some default styles */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+        background: #f4f7f9;
+        color: #333;
+        line-height: 1.6;
+    }
+
+    header {
+        background: #326ce5;
+        color: #fff;
+        padding: 2rem 1rem;
+        text-align: center;
+    }
+
+    header h1 {
+        margin-bottom: 0.5rem;
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1.1rem;
+    }
+
+    nav {
+        background: #1e50c3;
+        display: flex;
+        justify-content: center;
+        padding: 0.5rem 0;
+    }
+
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 1rem;
+        padding: 0.5rem 1rem;
+        transition: background 0.3s;
+        border-radius: 5px;
+    }
+
+    nav a:hover {
+        background: #2749a3;
+    }
+
+    section {
+        max-width: 1000px;
+        margin: 2rem auto;
+        padding: 1rem;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    section h2 {
+        color: #326ce5;
+        margin-bottom: 1rem;
+        border-bottom: 2px solid #326ce5;
+        padding-bottom: 0.5rem;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    .card {
+        background: #f9faff;
+        padding: 1.5rem;
+        border-radius: 8px;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    }
+
+    footer {
+        text-align: center;
+        padding: 1.5rem;
+        background: #1e50c3;
+        color: #fff;
+        margin-top: 2rem;
+    }
+
+    /* Responsive */
+    @media(max-width: 600px) {
+        header h1 {
+            font-size: 2rem;
+        }
+        nav {
+            flex-direction: column;
+        }
+        nav a {
+            margin: 0.3rem 0;
+        }
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Kubernetes Training</h1>
+    <p>Learn, Deploy, and Master Kubernetes</p>
+</header>
+
+<nav>
+    <a href="#overview">Overview</a>
+    <a href="#modules">Modules</a>
+    <a href="#resources">Resources</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="overview">
+    <h2>Course Overview</h2>
+    <p>Welcome to the Kubernetes training course! This program is designed to help you understand the fundamentals of container orchestration, cluster management, and deploying applications at scale.</p>
+</section>
+
+<section id="modules">
+    <h2>Training Modules</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Module 1: Introduction</h3>
+            <p>Get familiar with containers, Docker, and why Kubernetes is essential in modern cloud environments.</p>
+        </div>
+        <div class="card">
+            <h3>Module 2: Cluster Architecture</h3>
+            <p>Learn about nodes, pods, services, and the architecture that powers Kubernetes clusters.</p>
+        </div>
+        <div class="card">
+            <h3>Module 3: Deployment</h3>
+            <p>Hands-on training on deploying applications, managing configurations, and scaling workloads.</p>
+        </div>
+        <div class="card">
+            <h3>Module 4: Advanced Topics</h3>
+            <p>Dive into monitoring, networking, security, and best practices for production-grade Kubernetes setups.</p>
+        </div>
+    </div>
+</section>
+
+<section id="resources">
+    <h2>Resources</h2>
+    <ul>
+        <li>Official Kubernetes Documentation</li>
+        <li>Interactive Labs and Tutorials</li>
+        <li>Community Forums and Support</li>
+        <li>Cheat Sheets and Guides</li>
+    </ul>
+</section>
+
+<section id="contact">
+    <h2>Contact & Support</h2>
+    <p>For questions or additional help, reach out via <a href="mailto:support@k8straining.com">support@k8straining.com</a>.</p>
+</section>
+
+<footer>
+    <p>&copy; 2026 Kubernetes Training | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
