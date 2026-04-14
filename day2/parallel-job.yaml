@@ -1,0 +1,19 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: parallel-job
+spec:
+  # run 5 pods at a time
+  parallelism: 5
+  # run 10 pods to finish the job
+  completions: 10
+  # auto cleanup
+  ttlSecondsAfterFinished: 120
+  template:
+    spec:
+      containers:
+      - name: echo 
+        image: busybox
+        command: ["sh",  "-c", "echo test; sleep 30"]
+      restartPolicy: Never
+  backoffLimit: 4

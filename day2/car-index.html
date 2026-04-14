@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FastCar Rentals</title>
+<style>
+    * { margin:0; padding:0; box-sizing:border-box; font-family: Arial, sans-serif; }
+    body { background:#f0f2f5; color:#333; }
+    header { background:#ff6f61; color:white; padding:2rem 1rem; text-align:center; }
+    header h1 { font-size:2.5rem; margin-bottom:0.5rem; }
+    nav { display:flex; justify-content:center; background:#e55b50; padding:0.5rem 0; }
+    nav a { color:white; text-decoration:none; margin:0 1rem; padding:0.5rem 1rem; border-radius:5px; transition:0.3s; }
+    nav a:hover { background:#d04b42; }
+    section { max-width:1000px; margin:2rem auto; background:white; padding:2rem; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.05);}
+    section h2 { color:#ff6f61; margin-bottom:1rem; border-bottom:2px solid #ff6f61; padding-bottom:0.5rem;}
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:1.5rem; margin-top:1rem; }
+    .card { background:#fff2f0; padding:1.5rem; border-radius:8px; transition:0.3s; }
+    .card:hover { transform:translateY(-5px); box-shadow:0 6px 15px rgba(0,0,0,0.1);}
+    footer { text-align:center; padding:1.5rem; background:#e55b50; color:white; margin-top:2rem;}
+    @media(max-width:600px){ header h1 { font-size:2rem; } nav { flex-direction:column; } nav a { margin:0.3rem 0; } }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>FastCar Rentals</h1>
+    <p>Your reliable partner for car rentals anytime, anywhere</p>
+</header>
+
+<nav>
+    <a href="#fleet">Fleet</a>
+    <a href="#services">Services</a>
+    <a href="#booking">Booking</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="fleet">
+    <h2>Our Fleet</h2>
+    <div class="grid">
+        <div class="card"><h3>Sedan</h3><p>Comfortable and fuel-efficient cars for city trips.</p></div>
+        <div class="card"><h3>SUV</h3><p>Spacious and powerful vehicles for family adventures.</p></div>
+        <div class="card"><h3>Luxury</h3><p>High-end vehicles for a premium driving experience.</p></div>
+        <div class="card"><h3>Convertible</h3><p>Stylish cars for scenic drives and leisure trips.</p></div>
+    </div>
+</section>
+
+<section id="services">
+    <h2>Services</h2>
+    <ul>
+        <li>Daily, weekly, and monthly rentals</li>
+        <li>Airport pickup & drop-off</li>
+        <li>GPS and child seat options</li>
+        <li>24/7 roadside assistance</li>
+    </ul>
+</section>
+
+<section id="booking">
+    <h2>Book a Car</h2>
+    <p>Reserve your car online in just a few clicks. Fast, easy, and secure.</p>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:info@fastcarrentals.com">info@fastcarrentals.com</a></p>
+    <p>Phone: +1 (555) 123-4567</p>
+</section>
+
+<footer>
+    <p>&copy; 2026 FastCar Rentals. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
