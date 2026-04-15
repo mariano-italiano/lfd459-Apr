@@ -1,0 +1,4 @@
+
+Get the application port/IP by running these commands:
+
+	kubectl get svc -l helmchart=my

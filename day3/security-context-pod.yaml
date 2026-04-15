@@ -1,0 +1,26 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: security-context-pod
+spec:
+  securityContext:
+    # sets that for any container in the Pod, all processes will run with user ID 1000
+    runAsUser: 1000
+    # sets that for any container in the Pod, all processes will have group ID 3000
+    # any files created will also be owned by user 1000 and group 3000 when runAsGroup is specified
+    runAsGroup: 3000
+    # owner for the /data/demo volume and all files created in this volume will have group ID 2000
+    fsGroup: 2000
+  volumes:
+  - name: sec-ctx-vol
+    emptyDir: {}
+  containers:
+  - name: sec-ctx-demo
+    image: busybox:1.28
+    command: [ "sh", "-c", "sleep 1h" ]
+    volumeMounts:
+    - name: sec-ctx-vol
+      mountPath: /data/demo
+    securityContext:
+      # controls whether a process can gain more privileges than its parent process
+      allowPrivilegeEscalation: false

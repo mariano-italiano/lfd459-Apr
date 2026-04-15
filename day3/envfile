@@ -1,0 +1,11 @@
+# THIS IS THE CONFIG FILE FOR APP X
+
+# branch name
+branch=master
+
+# limits for app
+cpu=100m
+memory=2Gi
+
+# service description
+serviceName="my test app"

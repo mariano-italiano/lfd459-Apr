@@ -1,0 +1,11 @@
+
+replicaCount: 1
+
+image:
+  name: nginx
+  tag: 1.19.2
+
+service:
+  type: ClusterIP
+  port: 80
+

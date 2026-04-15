@@ -1,0 +1,11 @@
+
+replicaCount: 3
+
+image:
+  name: nginx
+  tag: 1.19.2
+
+service:
+  type: LoadBalancer
+  port: 80
+
